@@ -5,7 +5,7 @@
   "type": "module",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "node build.mjs",
+    "build": "node init && node build.mjs",
     "collab": "tsx server/documents-collab-server.ts",
     "collab:prod": "node dist/server/documents-collab-server.js",
     "test:multi-instance": "cross-env OM_DOCUMENTS_MULTI_INSTANCE_INTEGRATION=1 jest --config jest.config.cjs --runInBand collabMultiInstance.integration.test.ts",

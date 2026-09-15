@@ -3,9 +3,9 @@
   "version": "0.8.0",
   "private": true,
   "scripts": {
-    "dev": "docusaurus start",
-    "start": "docusaurus build && docusaurus serve",
-    "build": "docusaurus build",
+    "dev": "node init && docusaurus start",
+    "start": "node init && docusaurus build && docusaurus serve",
+    "build": "node init && docusaurus build",
     "serve": "docusaurus serve",
     "clean": "rimraf build .docusaurus",
     "test": "yarn clean && yarn build && node --test __tests__/search-index.test.mjs __tests__/reference-example-module.test.mjs __tests__/notification-registry.test.mjs __tests__/push-env-table.test.mjs __tests__/install-skills-docs.test.mjs"

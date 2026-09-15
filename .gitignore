@@ -44,8 +44,6 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files
-.env
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -115,7 +113,6 @@ package-lock.json
 
 # Claude Code MCP config (may contain API keys)
 .mcp.json
-.vscode/settings.json
 packages/cache/node_modules/*
 newrelic_agent.log
 /generated/
@@ -132,7 +129,6 @@ starters/docker/compose.*.local.yml
 
 # OpenCode local config (generated at runtime, may contain secrets)
 docker/opencode/opencode.jsonc
-.vscode/launch.json
 
 # Local npm registry (Verdaccio)
 .npmrc
@@ -197,3 +193,4 @@ starters/company/certs/
 # clean-tree guard refuse the next run.
 .stryker-tmp/
 **/reports/mutation/
+config.bat
